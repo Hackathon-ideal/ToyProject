@@ -1,0 +1,138 @@
+.screen{
+    align-items: flex-start;
+    background-color: #ffffff;
+    border: 1px none;
+    display: flex;
+    height: 700px;
+    padding: 35px 476px;
+    width: 960px;
+}
+.e6_2 {
+	background-color:rgba(255, 255, 255, 1);
+	width:561px;
+	height:299px;
+	position:absolute;
+}
+.e1_2 {
+	border-radius:500px;
+	background-color:rgba(215.0000023841858, 243.00000071525574, 249.00000035762787, 1);
+	width:400px;
+	height:200px;
+	position:absolute;
+	left:120px;
+	top:250px;
+}
+.e1_3 {
+	border-radius:500px;
+	background-color:rgba(215.0000023841858, 243.00000071525574, 249.00000035762787, 1);
+	width:400px;
+	height:200px;
+	position:absolute;
+	left:750px;
+	top:250px;
+}
+.e1_4 {
+	border-radius:500px;
+	background-color:rgba(215.0000023841858, 243.00000071525574, 249.00000035762787, 1);
+	width:400px;
+	height:200px;
+	position:absolute;
+	left:1350px;
+	top:250px;
+}
+.e1_5 {
+	border-radius:500px;
+	background-color:rgba(215.0000023841858, 243.00000071525574, 249.00000035762787, 1);
+	width:400px;
+	height:200px;
+	position:absolute;
+	left:120px;
+	top:600px;
+}
+.e1_6 {
+	border-radius:500px;
+	background-color:rgba(215.0000023841858, 243.00000071525574, 249.00000035762787, 1);
+	width:400px;
+	height:200px;
+	position:absolute;
+	left:750px;
+	top:600px;
+}
+.e1_7 {
+	border-radius:500px;
+	background-color:rgba(215.0000023841858, 243.00000071525574, 249.00000035762787, 1);
+	width:400px;
+	height:200px;
+	position:absolute;
+	left:1350px;
+	top:600px;
+}
+.e1_8 {
+	color:rgba(0, 0, 0, 1);
+
+	position:absolute;
+	font-family:Gaegu;
+	text-align:left;
+	font-size:75px;
+	left:550px;
+}
+.e1_9 {
+	color:rgba(0, 0, 0, 1);
+	position:absolute;
+	left:260px;
+	top:305px;
+	font-family:Gaegu;
+	text-align:center;
+	font-size:70px;
+
+}
+.e1_10 {
+	color:rgba(0, 0, 0, 1);
+	position:absolute;
+	left:870px;
+	top:305px;
+	font-family:Gaegu;
+	text-align:center;
+	font-size:70px;
+	letter-spacing:0;
+}
+.e1_11 {
+	color:rgba(0, 0, 0, 1);
+	position:absolute;
+	left:1500px;
+	top:305px;
+	font-family:Gaegu;
+	text-align:center;
+	font-size:70px;
+	letter-spacing:0;
+}
+.e1_12 {
+	color:rgba(0, 0, 0, 1);
+	position:absolute;
+	left:260px;
+	top:660px;
+	font-family:Gaegu;
+	text-align:center;
+	font-size:70px;
+	letter-spacing:0;
+}
+.e1_13 {
+	color:rgba(0, 0, 0, 1);
+	position:absolute;
+	left:897px;
+	top:660px;
+	font-family:Gaegu;
+	text-align:center;
+	font-size:70px;
+	letter-spacing:0;
+}
+.e1_14 {
+	color:rgba(0, 0, 0, 1);
+	position:absolute;
+	left:1465px;
+	top:660px;
+	font-family:Gaegu;
+	text-align:center;
+	font-size:70px;
+	letter-spacing:0;
+}

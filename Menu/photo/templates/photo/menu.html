@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's menu</title>
+<!--    <link href="/index.css" rel="stylesheet">-->
+<!--    django css 적용 코드-->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'photo/menu.css' %}">
+
+
+</head>
+<body>
+    <!-- 3페이지 -->
+    <div class="screen">
+        <div class="overlap1">
+             <div class="">
+                 <img src="{{koreanfoods.image.url}}" alt="{{koreanfoods.image}}"/>
+                 <img src="{{ran_jfood.image.url}}" alt="{{ran_jfood.image}}"/>
+                 <img src="{{yangsigfood.image.url}}" alt="{{yangsigfood.image}}"/>
+                 <img src="{{fast.image.url}}" alt="{{fast.image}}"/>
+             </div>
+            <div class="overlap2">
+                <div class="ellipse"></div>
+                    <div class="text4">오 늘 은</div>
+                    <div class="menuText">{{koreanfoods.title}}</div>
+                    <div class="menuText">{{ran_jfood.title}}</div>
+                    <div class="menuText">{{yangsigfood.title}}</div>
+                    <div class="menuText">{{fast.title}}</div>
+                    <div class="text6">어 때 요?</div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

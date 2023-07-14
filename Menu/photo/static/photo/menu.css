@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap');
+
+.screen{
+    align-items: flex-start;
+    background-color: #ffffff;
+    border: 1px none;
+    display: flex;
+    height: 700px;
+    padding: 35px 476px;
+    width: 960px;
+}
+
+body{
+    font-family: 'Gaegu', cursive;
+}
+.overlap1{
+    height: 791px;
+    margin-top: 139px;
+    position: relative;
+    width: 967px;
+}
+
+.overlap2{
+    height: 772px;
+    left: 0;
+    position: absolute;
+    top: 19px;
+    width: 967px;
+}
+
+
+
+.text6{
+    font-size: 60px;
+    left: 390px;
+    top: 580px;
+    position: absolute;
+}
+.text4{
+    font-size: 60px;
+    left: 390px;
+    top: 0;
+    position: absolute;
+}
+.ellipse{
+    background-color: #d7f2f8;
+    
+    border-radius: 483.5px/250px;
+    height: 500px;
+    left: 0;
+    position: absolute;
+    top: 82px;
+    width: 967px;
+
+}
+
+
+.screen .text{
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+}
+
+
+
+
+#randomImage{
+    width: 350px;
+    left: 315px;
+    position: absolute;
+    top: 200px;
+}
+
+/* 추가 부분 */
+.menuText{
+    font-size: 50px;
+    left: 390px;
+    top: 140px;
+    position: absolute;
+}

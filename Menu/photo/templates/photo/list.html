@@ -6,9 +6,10 @@
     <meta name="description" content="Figma htmlGenerator">
     <meta name="author" content="htmlGenerator">
     <link href="https://fonts.googleapis.com/css?family=Gaegu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="page2.css">
+<!--    <link rel="stylesheet" href="page2.css">-->
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'photo/list.css' %}">
+
 
 </head>
 
@@ -21,11 +22,12 @@
     <div class="e1_6"></div>
     <div class="e1_7"></div>
     <span class="e1_8"> 선택하면 추천 메뉴가 나와요</span>
-    <span class="e1_9">한식</span><span class="e1_10">간편식</span>
-    <span class="e1_11">중식</span>
-    <span class="e1_12">일식</span>
-    <span class="e1_13">양식</span>
-    <span class="e1_14">아시안</span>
+    <span class="e1_9"><a href="{% url 'koreanfood' %}">한식</a></span>
+    <span class="e1_10"><a href="{% url 'fastfood' %}">간편식</a></span>
+    <span class="e1_11"><a href="">중식</a></span>
+    <span class="e1_12"><a href="{% url 'japanesefood' %}">일식</a></span>
+    <span class="e1_13"><a href="{% url 'yangsigfood' %}">양식</a></span>
+    <span class="e1_14"><a href="">아시안</a></span>
 </div>
 </body>
 </html>

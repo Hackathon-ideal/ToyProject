@@ -1,33 +1,36 @@
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+          <head>
+            <meta charset="utf-8">
 
-    <title>food list</title>
-    <meta name="description" content="Figma htmlGenerator">
-    <meta name="author" content="htmlGenerator">
-    <link href="https://fonts.googleapis.com/css?family=Gaegu&display=swap" rel="stylesheet">
-<!--    <link rel="stylesheet" href="page2.css">-->
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'photo/list.css' %}">
+            <title>Html Generated</title>
+            <meta name="description" content="Figma htmlGenerator">
+            <meta name="author" content="htmlGenerator">
+            <link href="https://fonts.googleapis.com/css?family=Gaegu&display=swap" rel="stylesheet">
+
+            {% load static %}
+            <link rel="stylesheet" type="text/css" href="{% static 'photo/list.css' %}">
 
 
-</head>
+          </head>
 
-<body>
-<div class="screen">
-    <div class="e1_2"></div>
-    <div class="e1_3"></div>
-    <div class="e1_4"></div>
-    <div class="e1_5"></div>
-    <div class="e1_6"></div>
-    <div class="e1_7"></div>
-    <span class="e1_8"> 선택하면 추천 메뉴가 나와요</span>
-    <span class="e1_9"><a href="{% url 'koreanfood' %}">한식</a></span>
-    <span class="e1_10"><a href="{% url 'fastfood' %}">간편식</a></span>
-    <span class="e1_11"><a href="">중식</a></span>
-    <span class="e1_12"><a href="{% url 'japanesefood' %}">일식</a></span>
-    <span class="e1_13"><a href="{% url 'yangsigfood' %}">양식</a></span>
-    <span class="e1_14"><a href="">아시안</a></span>
-</div>
-</body>
-</html>
+          <body>
+          {% block content %}
+            <div>
+              <div  class="e1_2"></div>
+              <div  class="e1_3"></div>
+              <div  class="e1_4"></div>
+              <div  class="e1_5"></div>
+              <div  class="e1_6"></div>
+              <div  class="e1_7"></div>
+              <span  class="e1_8"> 선택하면 추천 메뉴가 나와요</span>
+              <span  class="e1_9"><a href="{% url 'koreanfood' %}" style="color:rgba(0, 0, 0, 1); text-decoration: none;">한식</a></span>
+              <span  class="e1_10"><a href="{% url 'fastfood' %}" style="color:rgba(0, 0, 0, 1); text-decoration: none;">간편식</a></span>
+              <span  class="e1_11"><a href="{% url 'chinesefood' %}" style="color:rgba(0, 0, 0, 1); text-decoration: none;">중식</a></span>
+              <span  class="e1_12"><a href="{% url 'japanesefood' %}" style="color:rgba(0, 0, 0, 1); text-decoration: none;">일식</a></span>
+              <span  class="e1_14"><a href="{% url 'yangsigfood' %}" style="color:rgba(0, 0, 0, 1); text-decoration: none;">양식</a></span>
+              <span  class="e1_13"><a href="{% url 'asianfood' %}" style="color:rgba(0, 0, 0, 1); text-decoration: none;">아시안</a></span>
+            </div>
+          {% endblock %}
+          </body>
+          </html>
+

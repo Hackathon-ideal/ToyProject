@@ -8,4 +8,6 @@ urlpatterns = [
     path('japanesefood/', japanese, name='japanesefood'),
     path('yangsigfood/', yangsig, name='yangsigfood'),
     path('fastfood/', fastfood, name='fastfood'),
+    path('asianfood/', asian, name='asianfood'),
+    path('chinesefood/', chinese, name='chinesefood'),
 ]

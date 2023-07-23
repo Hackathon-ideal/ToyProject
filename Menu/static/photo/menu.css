@@ -1,24 +1,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap');
 
+/* 값 수정 */
 .screen{
     align-items: flex-start;
     background-color: #ffffff;
     border: 1px none;
     display: flex;
-    height: 700px;
-    padding: 35px 476px;
-    width: 960px;
+    height: 550px;
+    padding: 7px 185px;
+    width: 1000px;
 }
 
 body{
     font-family: 'Gaegu', cursive;
 }
 .overlap1{
-    height: 791px;
-    margin-top: 139px;
+    height: 509px;
+    margin-top: 10px;
     position: relative;
-    width: 967px;
+    width: 619px;
 }
 
 .overlap2{
@@ -70,6 +71,16 @@ body{
     left: 315px;
     position: absolute;
     top: 200px;
+}
+
+/* 추가 부분 */
+#randomImage{
+    width: 350px;
+    left: 315px;
+    position: absolute;
+    top: 150px;
+    /* 수정사항 - 이미지 보이도록 */
+    z-index: 1;
 }
 
 /* 추가 부분 */

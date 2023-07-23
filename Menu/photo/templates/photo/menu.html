@@ -5,33 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Today's menu</title>
 <!--    <link href="/index.css" rel="stylesheet">-->
-<!--    django css 적용 코드-->
+    <!--    django css 적용 코드-->
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'photo/menu.css' %}">
 
 
 </head>
 <body>
+{% block content %}
     <!-- 3페이지 -->
     <div class="screen">
         <div class="overlap1">
-             <div class="">
-                 <img src="{{koreanfoods.image.url}}" alt="{{koreanfoods.image}}"/>
-                 <img src="{{ran_jfood.image.url}}" alt="{{ran_jfood.image}}"/>
-                 <img src="{{yangsigfood.image.url}}" alt="{{yangsigfood.image}}"/>
-                 <img src="{{fast.image.url}}" alt="{{fast.image}}"/>
-             </div>
             <div class="overlap2">
-                <div class="ellipse"></div>
+                <!-- 수정사항 원형 위 이미지 보이도록-->
+                <div class="ellipse">
+                    <img id="randomImage" src="{{koreanfoods.image.url}}" alt="{{koreanfoods.image}}" >
+                    <img id="randomImage" src="{{ran_jfood.image.url}}" alt="{{ran_jfood.image}}" >
+                    <img id="randomImage" src="{{yangsigfood.image.url}}" alt="{{yangsigfood.image}}" >
+                    <img id="randomImage" src="{{fast.image.url}}" alt="{{fast.image}}" >
+                    <img id="randomImage" src="{{asianfoods.image.url}}" alt="{{asianfoods.image}}" >
+                    <img id="randomImage" src="{{chinesefoods.image.url}}" alt="{{chinesefoods.image}}" >
+                    <!-- src 속 이미지 주소는 테스트용 (확인 후 지워도 돼요!) -->
+                </div>
                     <div class="text4">오 늘 은</div>
+                    <!-- 추가 부분 -->
                     <div class="menuText">{{koreanfoods.title}}</div>
                     <div class="menuText">{{ran_jfood.title}}</div>
                     <div class="menuText">{{yangsigfood.title}}</div>
                     <div class="menuText">{{fast.title}}</div>
+                    <div class="menuText">{{asianfoods.title}}</div>
+                    <div class="menuText">{{chinesefoods.title}}</div>
                     <div class="text6">어 때 요?</div>
             </div>
             
         </div>
     </div>
+{% endblock %}
 </body>
 </html>

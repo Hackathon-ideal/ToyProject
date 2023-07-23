@@ -34,3 +34,15 @@ def yangsig(request):
 def fastfood(request):
     fast = random.choice(Fastfood.objects.all())
     return render(request, 'photo/menu.html',{'fast':fast})
+
+def asian(request):
+    asianfoods = random.choice(Asian.objects.all())
+    # asianfoods = asian.objects.all()
+    # ran_afoods = random.choice(asianfoods)
+    return render(request, 'photo/menu.html', {'asianfoods': asianfoods})
+
+def chinese(request):
+    chinesefoods = random.choice(Chinese.objects.all())
+    # chinesefoods = chinese.objects.all()
+    # ran_cfoods = random.choice(chinesefoods)
+    return render(request, 'photo/menu.html', {'chinesefoods': chinesefoods})

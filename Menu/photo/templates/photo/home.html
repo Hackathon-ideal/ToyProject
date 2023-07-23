@@ -3,44 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-     {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Gaegu&display=swap" rel="stylesheet">
+    <title>오늘 뭐 먹지?</title>
+    {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'photo/home.css' %}">
-<!--    <style>-->
-<!--      main { -->
-<!--      background-image: url(뭐먹지.jpg) no-repeat center fixed;-->
-<!--      background-size: cover;-->
-<!--      }-->
-<!--      </style>-->
-    
-</head>
-<body>
-  <div class="main" style="width: 1100px; height: 590px; position: relative; background-image: url(../뭐먹지.jpg)">
-      <div class="Group6">
-        <div class="Text" > </div>
-        <div class="Ellipse20" ></div>
-        <div class="Ellipse21" ></div>
-        <div class="Ellipse22" ></div>
-        <div class="Ellipse23" ></div>
-        <div class="Ellipse24" ></div>
-        <div class="Ellipse25"></div>
-        <div class="Ellipse26" ></div>
-      </div>
-      <div class="Group8" style="width: 266px; height: 80px; left: 417px; top: 396px; position: absolute">
-        <div class="Rectangle3" style="width: 266px; height: 80px; left: 0px; top: 0px; position: absolute; background: #D7F3F9; border-radius: 15px"></div>
-        <div class="LetSGo" style="width: 202px; height: 48px; left: 32px; top: 16px; position: absolute; color: black; font-size: 40px; font-family: Gaegu; font-weight: 400; word-wrap: break-word">
-            <a href="{% url 'list' %}">LET’s GO!</a></div>
-      </div>
 
-      <div class="Group7">
-        <div class="Rectangle4"></div>
-        <div class="Group1" >
-          <div class ="today">오늘 </div>
-          <div class =" what">뭐</div>
-          <div class = "eat">먹지?</div>
-        </div>
-      </div>
+</head>
+
+<body>
+{% block content %}
+<div class="main">
+    <div class="Group6" style="width: 483px; height: 184.19px; left: 94px; top: -292px; position: absolute">
+        <div class="Text"
+             style="width: 209.61px; height: 94.55px; left: 273.39px; top: 33.89px; position: absolute; color: black; font-size: 48px; font-family: Gaegu; font-weight: 400; word-wrap: break-word"></div>
+        <div class="Ellipse20"
+             style="width: 136.92px; height: 105.25px; left: 57.09px; top: 0px; position: absolute; background: linear-gradient(0deg, #D7F3F9 0%, #D7F3F9 100%), linear-gradient(0deg, #D7F3F9 0%, #D7F3F9 100%), linear-gradient(0deg, #D7F3F9 0%, #D7F3F9 100%), linear-gradient(0deg, #D7F3F9 0%, #D7F3F9 100%)"></div>
+        <div class="Ellipse21"
+             style="width: 60.65px; height: 57.98px; left: 163.68px; top: 13.38px; position: absolute; background: #D7F3F9; border-radius: 9999px"></div>
+        <div class="Ellipse22"
+             style="width: 116.40px; height: 102.58px; left: 183.75px; top: 16.50px; position: absolute; background: #D7F2F9"></div>
+        <div class="Ellipse23"
+             style="width: 179.73px; height: 126.66px; left: 112.39px; top: 46.38px; position: absolute; background: #D7F2F9"></div>
+        <div class="Ellipse24"
+             style="width: 111.05px; height: 69.13px; left: 113.73px; top: 115.06px; position: absolute; background: #D7F2F9"></div>
+        <div class="Ellipse25"
+             style="width: 94.55px; height: 84.74px; left: 53.07px; top: 82.06px; position: absolute; background: #D7F2F9"></div>
+        <div class="Ellipse26"
+             style="width: 126.66px; height: 81.63px; left: -0px; top: 44.15px; position: absolute; background: #D7F2F9"></div>
     </div>
+    <div class="Group8" style="width: 266px; height: 80px; left: 417px; top: 396px; position: absolute">
+        <div class="Rectangle3"
+             style="width: 266px; height: 80px; left: 0px; top: 0px; position: absolute; background: #D7F3F9; border-radius: 15px"></div>
+        <div class="LetSGo"
+             style="width: 202px; height: 48px; left: 32px; top: 16px; position: absolute; color: black; font-size: 40px; font-family: Gaegu; font-weight: 400; word-wrap: break-word">
+            <a href="{% url 'list' %}" style="color:rgba(0, 0, 0, 1); text-decoration: none;">LET’s GO!</a></div>
+    </div>
+    <div class="Group7" style="width: 577.85px; height: 246px; left: 261px; top: 95px; position: absolute">
+        <div class="Rectangle4"
+             style="width: 577.85px; height: 246px; left: 0px; top: 0px; position: absolute; background: #D7F3F9; border-radius: 25px"></div>
+        <div class="Group1" style="width: 409.45px; height: 171.70px; left: 130px; top: 28px; position: absolute">
+            <div style="width: 118.01px; height: 26.42px; left: 57.22px; top: 0px; position: absolute; color: black; font-size: 64px; font-family: Gaegu; font-weight: 400; word-wrap: break-word">
+                오늘
+            </div>
+            <div style="width: 177.01px; height: 39.62px; left: 0px; top: 57.79px; position: absolute; color: black; font-size: 96px; font-family: Gaegu; font-weight: 400; word-wrap: break-word">
+                뭐
+            </div>
+            <div style="width: 305.75px; height: 113.92px; left: 103.70px; top: 57.79px; position: absolute; color: black; font-size: 128px; font-family: Gaegu; font-weight: 400; word-wrap: break-word">
+                먹지?
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
 </body>
 </html>

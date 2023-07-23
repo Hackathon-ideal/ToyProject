@@ -21,7 +21,7 @@
 ### 🧀 개발 환경
 * **Languages** : Python, HTML, CSS
 * **Framework** : Django
-* **IDE** : PyCharm
+* **IDE** : PyCharm, VSC
 <br>
 
 
